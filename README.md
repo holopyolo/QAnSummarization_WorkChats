@@ -21,23 +21,12 @@
 Решение представляет из себя применение одной и той же модели для RAG (но еще 1 ретривер модель) и суммаризации: Saiga llama-3-8b с подобранным промптом для получения стабильного, точного ответа в особенности без галлюцинаций
 
 ### Архетиктура модели
-<img width="1200" height="300" alt="image" src="https://github.com/holopyolo/QAnSummarization_WorkChats/blob/main/images/photo_2024-07-05_06-13-06.jpg"> 
+<img width="550" height="300" alt="image" src="https://github.com/holopyolo/QAnSummarization_WorkChats/blob/main/images/photo_2024-07-05_06-13-06.jpg"> 
 
 <br>
-<p>Пример предобработки модели выравнивания перспективы</p>
+<p>Работоспособность можете посмотреть в тг канале</p>
 
-| До обработки  | После обработки |
-| ------------- | ------------- |
-| <img width="100" height="50" alt="image" src="https://github.com/ankkarp/wagon-number-ocr/blob/kinowari/photo_2023-10-15_06-14-10.jpg">  | <img width="100" height="50" alt="image" src="https://github.com/ankkarp/wagon-number-ocr/blob/kinowari/photo_2023-10-15_06-14-04.jpg">  |
-
-
-<br>
-<p>Пример обработки изображения</p>
-
-| До обработки  | После обработки |
-| ------------- | ------------- |
-| <img width="600" height="300" alt="image" src="https://github.com/ankkarp/wagon-number-ocr/blob/kinowari/photo_2023-10-15_00-12-44(%D0%B4%D0%BE).jpg">  | <img width="600" height="300" alt="image" src="https://github.com/ankkarp/wagon-number-ocr/blob/kinowari/photo_2023-10-15_00-02-06.jpg">  |
-
+[Тг канал](https://t.me/+4k9i_K8DX4s5MDVi) без подсказки
 
 ## <a name="3">Запуск кода </a>
 
