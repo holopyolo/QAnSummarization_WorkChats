@@ -81,25 +81,12 @@ python aster_test.py -d "Путь до весов скаченной модел�
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Puthon" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original.svg" title="Pytorch" alt="Puthon" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" title="Numpy" alt="Puthon" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/opencv/opencv-original.svg" title="OpenCV" alt="Puthon" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/gaotongxiao/mmocr/blob/0cd2878b048cacc85306ef02a5cb60a61de7f91b/resources/mmocr-logo.png" title="MMocr" alt="Puthon" width="60" height="40"/>&nbsp;
-  <img src="https://modelscope.oss-cn-beijing.aliyuncs.com/modelscope.gif" title="Modelscope" alt="Puthon" width="120" height="40"/>&nbsp;
   <img src="https://github.com/gradio-app/gradio/blob/main/readme_files/gradio.svg" title="Gradio" alt="Puthon" width="100" height="40"/>&nbsp;
-  <img src="https://pjreddie.com/media/image/yologo_2.png" title="Yolo" alt="Puthon" width="100" height="40"/>&nbsp;
 ## <a name="6">Команда </a>
 
 
-*Состав команды "Герои ML и Магии"*   
-*Анна Карпова (https://github.com/ankkarp) - ML-engineer*    
-*Александра Куроедова (https://github.com/c-nemo) - ML-engineer*  
-*Анастасия Хан (https://github.com/Nanochka1) - Designer*  
-*Олег Сивец (https://github.com/OlegSivets) - ML-engineer*   
-*Рената Аюпова (https://github.com/kinowari) - ML-engineer* 
-
-## <a name="7">Ссылки </a>
+*Состав команды "Альянс Раменки и Щёлково"*   
+*Тимур Сариков (https://github.com/holopyolo) - ML-engineer*    
+*Никита Бенеш (https://github.com/nikbenesh) - ML-engineer*  
 
 
-- [Гугл диск с материалами](https://drive.google.com/drive/u/0/folders/13MgumU4OoE917fjG94GmjqmIzjyqc-jl)&nbsp;
-- [ссылка на весы модели детекции](https://drive.google.com/file/d/1_GgjGP_vOUZLzOk44dhArin81sYBRJI8/view?usp=drive_link)&nbsp;
-- [ссылка на весы модели выравнивания](https://drive.google.com/file/d/1hCFVOzW8J6l59G3jsYwAFmZyjs0XwpT6/view?usp=drive_link)&nbsp;
-- [ссылка на скринкаст](https://drive.google.com/file/d/1Wdu8nEqs_M4TL1Mfy7-lKL54340miua6/view?usp=drive_link)&nbsp;
