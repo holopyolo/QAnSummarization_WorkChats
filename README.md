@@ -21,7 +21,7 @@
 Решение представляет из себя применение одной и той же модели для RAG (но еще 1 ретривер модель) и суммаризации: Saiga llama-3-8b с подобранным промптом для получения стабильного, точного ответа в особенности без галлюцинаций
 
 ### Архетиктура модели
-<img width="1200" height="300" alt="image" src="https://github.com/ankkarp/wagon-number-ocr/blob/kinowari/%D1%82%D1%83%D1%82.jpg"> 
+<img width="1200" height="300" alt="image" src="https://github.com/holopyolo/QAnSummarization_WorkChats/blob/main/images/archi.bmp"> 
 
 <br>
 <p>Пример предобработки модели выравнивания перспективы</p>
