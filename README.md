@@ -42,40 +42,17 @@
 ## <a name="3">Запуск кода </a>
 
 ### Последовательные шаги для запуска кода:
-1. Склонируйте гит репозиторий;
+1. Сборка;
 ```Bash
-git clone https://github.com/ankkarp/wagon-number-ocr.git
+docker build -t my-python-app .
 ```
-2. Скачайте веса для модели детекции [yolov8.pt](https://drive.google.com/file/d/1_GgjGP_vOUZLzOk44dhArin81sYBRJI8/view?usp=drive_link);
-3. Установить pytorch==1.12.0 и torchvision==0.13.0 под версию cuda: https://pytorch.org/get-started/locally/;
-
-Через conda:
+2. Запуск;
 ```Bash
-conda install pytorch==1.12.0 torchvision==0.13.0 pytorch-cuda={версия cuda} -c pytorch -c nvidia
-```
-
-4. Установить:
- ```Bash
-pip install -U openmim
-pip install chardet
-mim install mmengine
-mim install mmcv
-mim install mmdet
-mim install mmocr
-pip install -U --force-reinstall charset-normalizer
-```
-5. Установить зависимости проекта:
- ```Bash
-pip install -r requirements.txt
-```
-6. Запустите в командной строке следующую команду, предварительно заменив пути к папкам на ваши
-```Bash
-cd путь_до_папки_с_кодом_репозитория
-python aster_test.py -d "Путь до весов скаченной модели детекции" -i "путь до папки с фотографиями" -o 'название_файла_с_результатом.csv' 
+docker run -d --name my-app-container my-python-app
 ```
 ## <a name="4">Уникальность нашего решения </a>
 
-Мы используем комбинацию моделей для распознавания цифр с предварительной предобработкой выравниванием изображения в перспективе и последующей постобработкой в виде эвристик связанных с количеством предсказанных цифр
+Используем одну ЛЛМ отлично справляющуюся как с задачей RAG, так и суммаризацией. Используем кеширование, чтобы часто не тратить время на генерацию ответа.
 
 ## <a name="5">Стек </a>
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Puthon" width="40" height="40"/>&nbsp;
