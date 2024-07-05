@@ -28,6 +28,10 @@
 
 [Тг канал](https://t.me/+4k9i_K8DX4s5MDVi) 
 
+<p>Презентация</p>
+
+[Презентация проекта](https://github.com/holopyolo/QAnSummarization_WorkChats/blob/main/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D1%81%D0%B0%D0%BC%D0%BC%D0%B0%D1%80%D0%B8%20%D0%B1%D0%BE%D1%82.pptx)
+
 ## <a name="3">Запуск кода </a>
 
 ### Последовательные шаги для запуска кода:
