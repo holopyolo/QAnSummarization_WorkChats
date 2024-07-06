@@ -25,6 +25,7 @@ def add_messages_to_index(messages):
     add embeddings of messages to your DB
     
     '''
+    index = faiss.IndexFlatL2(dim_retriever)
     embeddings = embed_message(messages)
     index.add(embeddings)
 
