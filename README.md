@@ -52,7 +52,14 @@ docker run -d --name my-app-container my-python-app
   <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original.svg" title="Pytorch" alt="Puthon" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" title="Numpy" alt="Puthon" width="40" height="40"/>&nbsp;
   <img src="https://github.com/gradio-app/gradio/blob/main/readme_files/gradio.svg" title="Gradio" alt="Puthon" width="100" height="40"/>&nbsp;
-## <a name="6">Команда </a>
+
+## <a name="6">TODO: </a>
+
+1. Интегрировать hydra
+2. Добавить логгирование
+3. Добавить метрики
+
+## <a name="7">Команда </a>
 
 
 *Состав команды "Альянс Раменки и Щёлково"*   
