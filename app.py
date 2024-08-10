@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify, request
+import hydra
+from omegaconf import DictConfig, OmegaConf
 from summarize_module import get_rag_answer, get_summarize
 import pandas as pd
 import logger_logic
+from rag_module import Rag, ENCODDER
 
 
 def parse_to_prompt(js):
@@ -32,11 +35,27 @@ def parse_to_prompt(js):
     return '\n'.join(formatted_messages)
 
 
-def main():
+@hydra.main(version_base=None, config_path="conf")
+def main(cfg: DictConfig) -> None:
+    if not (len(cfg)):
+        logger.error('Config is empty')
+        return 0
+    print(OmegaConf.to_yaml(cfg))
+    logger.info(f'Config is loaded: {OmegaConf.to_yaml(cfg)}')
     app = Flask(__name__)
     app.run(host='0.0.0.0', port=8000)
     logger = logger_logic(__name__)
     logger.info('Server is running')
+    model_global = None
+
+    if cfg['use_one_model']:
+        model_global = ENCODDER(cfg['MODEL_NAME_LLM'])
+
+    rag = Rag(cfg['MODEL_NAME_LLM'],
+              cfg['DEFAULT_SYSTEM_RAG_PROMPT'],
+              cfg['MODEL_NAME_RETRIEVER'],
+              cfg['dim_retriever'],
+              model_global)
 
     @app.route('/rag-answer', methods=['POST'])
     def rag_answer():
@@ -49,7 +68,7 @@ def main():
             return jsonify({"answer": "Error during parsing args for RAG: \n" + str(err)})
 
         try:
-            answer = get_rag_answer(context, query)
+            answer = rag.get_rag_answer(context, query)
         except Exception as err:
             logger.exception('Error during generating answer for RAG')
             return jsonify({"answer": "Error during generating answer for RAG: \n" + str(err)})

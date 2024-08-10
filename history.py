@@ -125,7 +125,7 @@ class DataBase:
 		self.users.loc[user_id, 'current_group_id'] = group_id
 		self.groups.to_sql(name='GROUPS', con=self.db_conn)
 
-	def get_current_group_id(user_id):
+	def get_current_group_id(self, user_id):
 		return self.users.loc[user_id, 'group_id']
 
 	def set_summary_last_update(self, group_id):

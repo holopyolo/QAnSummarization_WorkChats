@@ -1,0 +1,7 @@
+defaults:
+  - db: sqlite
+  - rag: model
+  - summ: model
+global_settings:
+  use_one_model: 1
+  model_w_path: "model_w"
